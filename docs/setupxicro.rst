@@ -126,6 +126,7 @@ Generating Firmware library
 The library will be generated based on setup_xicro.yaml. The firmware library .h , .cpp will be created at $generate_library_Path according to setup_xicro.yaml.
 
 .. code-block:: sh
+
   cd ~/xxx_ws/src      #cd to your workspace
   colcon build
   ros2 run xicro_pkg generate_library.py -mcu_type -module_name 
@@ -139,14 +140,17 @@ The library will be generated based on setup_xicro.yaml. The firmware library .h
     ### Example 
     ARDUINO
 .. code-block:: sh
+
     ros2 run xicro_pkg generate_library.py -mcu_type arduino  // Example generate for arduino family.
     
     ESP
 .. code-block:: sh
+
     ros2 run xicro_pkg generate_library.py -mcu_type esp  // Example generate for esp family.
     
     STM32F411RE
 .. code-block:: sh
+
     ros2 run xicro_pkg generate_library.py -mcu_type stm32 -module_name "stm32f4xx_hal.h"  // Example generate for stm32F4xx
     
 Generating Python Executable
@@ -154,6 +158,7 @@ Generating Python Executable
 The Python executabe will be generated based on "setup_xicro.yaml". The executable will be generated at path ~xxx_ws/src/Xicro/xicro_pkg/scripts.
 
 .. code-block:: sh
+
     ros2 run xicro_pkg generate_xicro_node.py -mcu_type arduino 
     
   -mcu_type (require) : Users must specify the family of MCU [arduino , esp , stm32]
