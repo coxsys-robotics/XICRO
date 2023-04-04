@@ -176,14 +176,16 @@ General Pipeline for using XICRO
 2. Generate the Python Executable
 3. Write and upload your firmware to the MCU
 4. Connect the MCU to the computer
-3. Verify the permission for the open port
-    .. code-block:: sh
-        sudo chown $USERNAME /port     #Changing permissions port 
+5. Verify the permission for the open port
 
-4. Execute the previously generated Python executable (run the generated node)
+.. code-block:: sh
+    
+    sudo chown $USERNAME /port     #Changing permissions port 
 
-    .. code-block:: sh
+6. Execute the previously generated Python executable (run the generated node)
 
-        ros2 run xicro_pkg xicro_xxx_node  
+.. code-block:: sh
+    
+    ros2 run xicro_pkg xicro_xxx_node  
         
-Congratualtions!!! Now your MCU can connect to ROS2 network.
+Congratulations!!! Now your MCU can connect to ROS2 network.
